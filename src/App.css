@@ -1,0 +1,236 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+  background-color: #333;
+  font-size: large;
+}
+
+/* Home page styling */
+.Home {
+  color: wheat;
+  height: 100%;
+}
+
+/* About page styling */
+.About {
+  color: wheat;
+  height: 100vh;
+}
+
+.AboutProfilePic {
+  width: 200px;
+  height: 200px;
+  background-image: url('profile-pic.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 20px auto; /* Center the circle */
+}
+
+/* Contact page styling */
+.ContactContent {
+  color: wheat;
+}
+
+.ContactContent p {
+  text-align: justify;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+/* Navigation bar styling */
+.Navbar {
+  text-align: right;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Navbar-left, .Navbar-right {
+  color: #fff;
+  padding: 15px;
+  display: flex;
+}
+
+.Navbar a {
+  color: wheat;
+  margin-right: 80px;
+  text-decoration: none;
+}
+
+.Navbar a:hover {
+  background-color: #333;
+  color: #03e428;
+}
+
+/* Upload section styling */
+.UploadSection {
+  padding: 40px;
+  box-sizing: border-box;
+
+  /* styles for image container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ImageContainer {
+  min-width: 640px;
+  height: 480px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+}
+
+.imageDetect {
+  height: 100%;
+}
+
+/* Video player styling */
+.VideoPlayer {
+  width: 70%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Login page styling */
+.Login {
+  color: wheat;
+  height: 100vh;
+}
+
+.Link-style {
+  text-decoration: none;
+  color: #03e428;
+  font-size: larger;
+}
+
+.Login input {
+  padding: 10px;
+  border-radius: 7px;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px
+}
+
+/* Signup page styling */
+.Signup {
+  color: wheat;
+  height: 100vh;
+}
+
+.Signup input {
+  padding: 10px;
+  border-radius: 7px;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px
+}
+
+/* Clock page styling */
+.ClockContent {
+  font-size: 8em;
+  text-align: center;
+  color: wheat;
+  height: 100vh;
+}
+
+.ClockContent h1:hover {
+  background-color: #333;
+  color: #03e428;
+}
+
+.ClockTitle {
+  font-size: 60px;
+  text-align: center;
+  color: wheat;
+}
+
+/* Footer component styling */
+.Footer {
+  color: wheat;
+  background-color: #333;
+  bottom: 0;
+  padding: 10px;
+  flex-shrink: 0;
+  border-top: 2px solid wheat;
+  margin-top: 1%;
+}
+
+.FooterComponents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.FooterComponents li {
+  margin: 10px;
+}
+
+.FooterLinks ul {
+  text-align: left;
+}
+
+.FooterContactInfo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.FooterCompanyDetails {
+  max-width: 800px;
+  margin-left: 5%;
+}
+
+.FooterContactInfo {
+  margin-right: 5%;
+}
+
+.FooterBottomElement {
+  color: #333;
+  background-color: wheat;
+  padding: 3px;
+  margin-top: 10px;
+}
+
+/* Button tag styling */
+button {
+  background-color: #05af24;
+  width: 90px;
+  height: 40px;
+  border-radius: 7px;
+  font-weight: 800;
+}
+
+/* a tag styling */
+a{
+  color: lightskyblue;
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+  display: inline-block;
+  margin-right: 10px;
+}
+
+a:hover{
+  color: greenyellow;
+}
