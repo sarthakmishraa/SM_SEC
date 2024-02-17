@@ -7,6 +7,8 @@ import Home from './Home';
 import Clock from './Clock';
 import Login from './Login';
 import Signup from './Signup';
+import RealTimeDetection from './RealTimeDetection';
+import UploadSection from './UploadSection';
 
 // App, Contact, Home, About and much more
 function App() {
@@ -32,6 +34,12 @@ function App() {
             </Route>
 
             <Route path="/signup" element={<Signup/>}>
+            </Route>
+
+            <Route path="/imgDetect" element={<UploadSection/>}>
+            </Route>
+
+            <Route path="/liveDetect" element={<RealTimeDetection/>}>
             </Route>
 
           </Routes>
