@@ -8,8 +8,10 @@ function Navbar() {
       <div className="Navbar-left">
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/about">About Sarthak</Link>
+          <Link to="/imgDetect">Image Object Detection</Link>
+          <Link to="/liveDetect">Live Detection</Link>
           <Link to="/contact">Contact</Link>
+          <Link to="/about">About Sarthak</Link>
           <Link to="/clock">Clock</Link>
         </nav>
       </div>
