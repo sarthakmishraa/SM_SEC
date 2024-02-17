@@ -1,8 +1,7 @@
 // RealTimeDetection.js
 import React, { useRef, useState } from "react";
 import Webcam from "react-webcam";
-// import "@tensorflow/tfjs-backend-cpu";
-// import "@tensorflow/tfjs-backend-webgl"
+import Footer from './Footer';
 import * as cocoSSD from "@tensorflow-models/coco-ssd";
 
 function RealTimeDetection() {
@@ -41,15 +40,27 @@ function RealTimeDetection() {
     const model = await cocoSSD.load();
     const predictions = await model.detect(video, 5);
     if(predictions.length !== 0) {
-      setPredictions(["Predictions: " + predictions[0].class + " Score: " + (predictions[0].score * 100).toFixed(2) + "%"]);
+      setPredictions(predictions);
     }
   }
 
   return (
     <div className="RealTimeDetection">
-      <button onClick={handleCameraClick}>{isCameraActive ? "Disable Cam" : "Enable Cam"}</button>
-      {isCameraActive && <h2>{predictions.length !== 0 ? predictions : "Detecting..."}</h2>}
-      {isCameraActive && <Webcam ref={webCamRef} mirrored={true} height={480} width={640} onUserMedia={continuousDetection} onPlay={() => continuousDetection}></Webcam>}
+      <div className="Webcam">
+        <h3>Real Time Object Detection</h3>
+      
+        <button className="WebcamButton" onClick={handleCameraClick}>{isCameraActive ? "Disable Cam" : "Enable Cam"}</button>
+      
+        <div className="WebcamContainer">
+          {isCameraActive && <Webcam ref={webCamRef} mirrored={true} height={480} width={640} onUserMedia={continuousDetection} onPlay={() => continuousDetection}></Webcam>}
+        </div>
+
+        {isCameraActive && <h2>{predictions.length !== 0 ? <h3>
+        No of classes detected: {predictions.length} <br/> {predictions.map(detection => <div>{detection.class} {(detection.score).toFixed(2)*100}%</div>)}
+        </h3> : "Detecting..."}</h2>}
+      
+      </div>
+      <Footer></Footer>
     </div>
     );
 }
