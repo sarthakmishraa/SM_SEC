@@ -24,6 +24,12 @@ code {
 .Home {
   color: wheat;
   height: 100%;
+  min-height: 100vh;
+}
+
+.HomeFeature {
+  display: inline-block;
+  margin: 20px;
 }
 
 /* About page styling */
@@ -55,6 +61,8 @@ code {
 
 /* Navigation bar styling */
 .Navbar {
+  margin-left: 100px;
+  margin-right: 50px;
   text-align: right;
   color: #fff;
   padding: 15px;
@@ -80,7 +88,8 @@ code {
 }
 
 /* Upload section styling */
-.UploadSection {
+.ImageDetection {
+  color: wheat;
   padding: 40px;
   box-sizing: border-box;
 
@@ -93,10 +102,10 @@ code {
 .ImageContainer {
   min-width: 640px;
   height: 480px;
-  border: 3px solid #fff;
+  border: 3px solid wheat;
   border-radius: 5px;
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
   position: relative;
 }
@@ -105,11 +114,34 @@ code {
   height: 100%;
 }
 
+/* RealTimeDetection styling */
+
+.RealTimeDetection {
+  color: wheat;
+}
+
+.WebcamContainer {
+  margin: 50px;
+  width: 640px;
+  height: 480px;
+  border: 3px solid wheat;
+}
+
+.Webcam {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
 /* Video player styling */
 .VideoPlayer {
   width: 70%;
   padding: 20px;
   box-sizing: border-box;
+  display: inline-block;
+  align-items: center;
 }
 
 /* Login page styling */
