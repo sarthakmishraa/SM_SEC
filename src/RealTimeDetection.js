@@ -52,7 +52,7 @@ function RealTimeDetection() {
         <button className="WebcamButton" onClick={handleCameraClick}>{isCameraActive ? "Disable Cam" : "Enable Cam"}</button>
       
         <div className="WebcamContainer">
-          {isCameraActive && <Webcam ref={webCamRef} mirrored={true} height={480} width={640} onUserMedia={continuousDetection} onPlay={() => continuousDetection}></Webcam>}
+          {isCameraActive ? <Webcam ref={webCamRef} mirrored={true} height={480} width={640} onUserMedia={continuousDetection} onPlay={() => continuousDetection}></Webcam> : <h3>Uploaded/detected live feed will be shown here</h3>}
         </div>
 
         {isCameraActive && <h2>{predictions.length !== 0 ? <h3>

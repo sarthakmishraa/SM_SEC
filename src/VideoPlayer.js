@@ -2,7 +2,7 @@
 import React from "react";
 
 function VideoPlayer() {
-  const videoSource = "https://www.youtube.com/watch?v=6RrEQJNZwPQ&list=RDEMLbwywICAYOlC2vOj5cPYjQ&index=9&pp=8AUB";
+  const videoSource = "https://www.youtube.com/watch?v=W0L6N0gRZBQ";
 
   return (
     <div className="VideoPlayer">

@@ -14,7 +14,7 @@ function Footer() {
           <h2>Other Projects</h2>
           <ul>
             <li><a href="https://github.com/sarthakmishraa/Capstone-Project-MCalm" target="_blank" rel="noreferrer">MCalm</a></li>
-            <li><a href="https://github.com/sarthakmishraa/age_detection" target="_blank" rel="noreferrer">Pothole Detection</a></li>
+            <li><a href="https://github.com/sarthakmishraa/age_detection" target="_blank" rel="noreferrer">Age Detection</a></li>
             <li><a href="https://github.com/sarthakmishraa/pothole_detection" target="_blank" rel="noreferrer">Pothole Detection</a></li>
             <li><a href="https://github.com/sarthakmishraa/bike_rental_predictor" target="_blank" rel="noreferrer">Bike Rental Predictor</a></li>
           </ul>
