@@ -57,7 +57,6 @@ function UploadSection() {
         <input type="file" onChange={ handleFileChange }></input>
         <br/>
         <button onClick={ handleUpload }>Detect</button>
-        <h3></h3>
         <h3>
         No of classes detected: {results.length} <br/> {results.map(detection => <div>{detection.class} {(detection.score).toFixed(2)*100}%</div>)}
         </h3>
