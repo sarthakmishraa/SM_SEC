@@ -48,17 +48,6 @@ code {
   margin: 20px auto; /* Center the circle */
 }
 
-/* Contact page styling */
-.ContactContent {
-  color: wheat;
-}
-
-.ContactContent p {
-  text-align: justify;
-  padding-left: 300px;
-  padding-right: 300px;
-}
-
 /* Navigation bar styling */
 .Navbar {
   margin-left: 100px;
@@ -70,7 +59,7 @@ code {
   justify-content: space-between;
 }
 
-.Navbar-left, .Navbar-right {
+.Navbar-left{
   color: #fff;
   padding: 15px;
   display: flex;
@@ -146,61 +135,6 @@ code {
   box-sizing: border-box;
   display: inline-block;
   align-items: center;
-}
-
-/* Login page styling */
-.Login {
-  color: wheat;
-  height: 100vh;
-}
-
-.Link-style {
-  text-decoration: none;
-  color: #03e428;
-  font-size: larger;
-}
-
-.Login input {
-  padding: 10px;
-  border-radius: 7px;
-  width: 300px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px
-}
-
-/* Signup page styling */
-.Signup {
-  color: wheat;
-  height: 100vh;
-}
-
-.Signup input {
-  padding: 10px;
-  border-radius: 7px;
-  width: 300px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px
-}
-
-/* Clock page styling */
-.ClockContent {
-  font-size: 8em;
-  text-align: center;
-  color: wheat;
-  height: 100vh;
-}
-
-.ClockContent h1:hover {
-  background-color: #333;
-  color: #03e428;
-}
-
-.ClockTitle {
-  font-size: 60px;
-  text-align: center;
-  color: wheat;
 }
 
 /* Footer component styling */
